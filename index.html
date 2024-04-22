@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>2048ML</title>
+		<link rel="stylesheet" href="css/colors.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div id="wrap">
+			<header>
+				<div id="mainHead">2084</div>
+				<button id="restart" onclick="restartGame()">New Game</button>
+				<div id="scoreWrap">
+					<h3>SCORE</h3>
+					<div id="score">0</div>
+				</div>
+			</header>
+			<div id="gameWrap">
+				<div id="r0c0" class="n0"></div>
+				<div id="r0c1" class="n0"></div>
+				<div id="r0c2" class="n0"></div>
+				<div id="r0c3" class="n0"></div>
+				<div id="r1c0" class="n0"></div>
+				<div id="r1c1" class="n0"></div>
+				<div id="r1c2" class="n0"></div>
+				<div id="r1c3" class="n0"></div>
+				<div id="r2c0" class="n0"></div>
+				<div id="r2c1" class="n0"></div>
+				<div id="r2c2" class="n0"></div>
+				<div id="r2c3" class="n0"></div>
+				<div id="r3c0" class="n0"></div>
+				<div id="r3c1" class="n0"></div>
+				<div id="r3c2" class="n0"></div>
+				<div id="r3c3" class="n0"></div>
+			</div>
+			<div id="timelineWrap">
+				<button type="button" class="tButton" onclick="timelineBack()">Back</button>
+				<button type="button" class="tButton" onclick="timelineForward()">Forward</button>
+			</div>
+
+			<p>
+				<strong>How to play:</strong> Use your <strong>arrow keys</strong>
+				to move the tiles. Tiles with the same number
+				<strong>merge into one</strong> when they touch. Add them up to reach
+				<strong>2048!</strong>
+			</p>
+		</div>
+		<script src="js/2048.js"></script>
+	</body>
+</html>

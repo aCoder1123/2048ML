@@ -1,0 +1,122 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #faf8ef;
+	color: #776e65;
+	font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+	font-size: 18px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	line-height: 1;
+}
+
+#wrap {
+	width: 40vw;
+	min-width: 400px;
+}
+
+header {
+	width: 100%;
+	height: 15vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+
+	font-weight: bold;
+}
+
+#mainHead {
+	font-size: 6rem;
+}
+
+#restart {
+	background-color: #8f7a66;
+	border: none;
+	outline: none;
+    border-radius: 3px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #f9f6f2;
+    height: 40px;
+    line-height: 42px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+
+}
+
+
+#scoreWrap{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+
+	background-color: #bbada0;
+	border-radius: .4vw;
+
+	padding: 1vw 1.4vw;
+
+	height: 6vw;
+
+}
+
+#scoreWrap h3 {
+	color: #eee4da;
+	padding: 0;
+	height: .5vw;
+}
+
+#score {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	color: white;
+}
+
+
+#gameWrap {
+	width: calc(100% - calc(var(--gutterWidth) * 2));
+	aspect-ratio: 1 / 1;
+	background-color: #bbada0;
+	border: var(--gutterWidth) solid #bbada0;
+	border-radius: var(--gutterWidth);
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	row-gap: var(--gutterWidth);
+	column-gap: var(--gutterWidth);
+	
+}
+
+#timelineWrap {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.tButton {
+	margin-top: 3vh;
+	background-color: #8f7a66;
+	border: none;
+	outline: none;
+    border-radius: .75vh;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #f9f6f2;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 2rem;
+	cursor: pointer;
+}
